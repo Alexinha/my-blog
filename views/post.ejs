@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+  <h1><%=title%></h1>
+  <p><%=content%></p>
+
+<div class="buttonGroup">
+  <form class="postButton" action="/" method="post">
+    <button type="submit" name="goBackBtn" class="button1 btn btn-info">Go Back</button>
+  </form>
+  <form class="postButton" action="/delete" method="post">
+    <button type="submit" value="<%= uniqueId %>" name="deleteBtn" class="button2 btn btn-info">Delete</button>
+  </form>
+
+</div>
+
+
+<%- include("partials/footer"); -%>
